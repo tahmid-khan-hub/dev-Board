@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class="poppins-regular w-full lg:max-w-[1536px] lg:mx-auto">
+    <header>
+        <nav class="border-4 lg:my-[20px] lg:py-4 lg:rounded-2xl">
+            <div class="flex ">
+                <img src="./assets/logo.png" class="w-[51px] m-1 lg:ml-3 mr-2" alt="">
+                <h1 class=" mr-24 lg:mr-[1015px] text-[35px]">Dev<span class="font-bold">Board</span></h1>
+
+                <div class="flex mr-6 lg:mr-[38px] lg:bg-[#F4F7FF] rounded-[32px]">
+                    <img src="./assets/checkbox.png" class="w-[32px] h-[32px] m-1 mt-3 mx-4" alt="">
+                    <p class=" text-[35px] font-bold mr-4 mt-1">23</p>
+                </div>
+
+                <img src="./assets/theme-btn.png" class="w-[40px] h-[40px] m-1" alt="">
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
