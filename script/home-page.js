@@ -19,6 +19,7 @@ document.getElementById('home-btn')
     }
 
     const container = document.getElementById('history-container');
+    container.style.display = 'block';
 
     const div = document.createElement('div');
     div.classList.add('bg-gray-100', 'p-3', 'm-4', 'rounded-xl', 'text-gray-500')
