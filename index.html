@@ -32,9 +32,9 @@
         }
     </style>
 </head>
-<body class="poppins-regular w-full lg:max-w-[1536px] lg:mx-auto">
-    <header>
-        <nav class="border-4 lg:my-[20px] lg:py-4 lg:rounded-2xl">
+<body class="poppins-regular bg-emerald-300 ">
+    <header class="w-full lg:max-w-[1536px] lg:mx-auto bg-white rounded-2xl">
+        <nav class="border-4 lg:my-[20px] lg:py-4 lg:rounded-2xl ">
             <div class="flex ">
                 <img src="./assets/logo.png" class="w-[51px] m-1 lg:ml-3 mr-2" alt="">
                 <h1 class=" mr-24 lg:mr-[1015px] text-[35px]">Dev<span class="font-bold">Board</span></h1>
@@ -48,12 +48,16 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="grid lg:grid-cols-2 grid-cols-1">
-            <div class="w-full lg:max-w-[1146px] lg:mx-auto grid lg:grid-cols-3 grid-cols-1">
-                <div class="flex w-full lg:max-w-[263px] lg:mx-auto bg-[#F4F7FF] p-6 rounded-xl">
-                    <div class="border-4 w-[64px] h-[64px] rounded-full mr-6">
-                        <img src="./assets/checkbox.png" class=" mt-3 ml-[14px] w-[30px] h-[30px] " alt="">
+    <main class="w-full lg:max-w-[1536px] lg:mx-auto ">
+        
+        <section class="grid grid-cols-2 lg:w-[1536px] lg:mx-auto mb-10 ">
+
+            <div class="grid grid-cols-3 border-4 mt-4 p-4 lg:w-[1146px] rounded-xl bg-white mb-10">
+
+                
+                <div class="flex w-full lg:max-w-[263px]  bg-[#F4F7FF] p-6 rounded-xl lg:ml-2">
+                    <div class="bg-white w-[64px] h-[64px] rounded-full mr-6">
+                        <img src="./assets/checkbox.png" class=" mt-4 ml-[16px] w-[30px] h-[30px] " alt="">
                     </div>
                     <div>
                         <h1>Task Assigned</h1>
@@ -61,32 +65,134 @@
                     </div>
                 </div>
 
-                <div>
-
+                <div class="w-full lg:w-[524px] bg-gradient-to-b from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl lg:-ml-[80px] flex ">
+                    <img src="./assets/board.png" class="w-[63px] h-[70px] mt-6 ml-7 mr-4" alt="">
+                    <h1 class="text-white font-medium text-2xl mt-7">Discover Something <br> New Today!</h1>
                 </div>
 
-                <div class="flex w-full lg:max-w-[263px] lg:mx-auto bg-[#F4F7FF] p-6 rounded-xl">
-                    <div class="border-4 w-[64px] h-[64px] rounded-full mr-6">
-                        <img src="./assets/checkbox.png" class=" mt-3 ml-[14px] w-[30px] h-[30px] " alt="">
+                <div class="flex w-full lg:max-w-[263px]  bg-[#F4F7FF] p-6 rounded-xl lg:ml-[91px]">
+                    <div class="bg-white w-[64px] h-[64px] rounded-full mr-6">
+                        <img src="./assets/calender.png" class=" mt-4 ml-[16px] w-[30px] h-[30px] " alt="">
                     </div>
-                    <div>
-                        <h1>Task Assigned</h1>
-                        <p class="text-3xl font-bold">06</p>
+                    <div class="text-2xl font-medium">
+                        <span id="weekday" class="font-normal"></span>,
+                         <br>
+                        <span id="bold-date" class="font-bold"></span>
                     </div>
                 </div>
+
+
+
+                <div class="bg-[#F4F7FF] mt-14 w-full lg:w-[342px] rounded-xl ml-3">
+                    <div class="w-[114px] rounded-lg p-2 bg-white mt-4 ml-4 mb-3 "><p class="ml-2">ShopEase</p></div>
+                    <h1 class="font-semibold text-2xl mb-4 ml-4">Fix Mobile Button Issue </h1>
+                    <div class="bg-white mx-4 rounded-lg p-2 mb-7">
+                        <p class="overflow-hidden text-ellipsis whitespace-nowrap mb-3 mx-3 mt-1 text-gray-500">Debug using Chrome DevTools <br>, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+
+                    <p class="text-gray-500 ml-4">Deadline</p><br>
+                    <div class="flex -mt-7 ml-4">
+                        
+                        <p class="mr-11">21 March 2025</p>
+                        <button class="bg-[#3752FD] w-[150px] p-3 rounded-lg text-white -mt-4 mb-4">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] mt-14 w-full lg:w-[342px] rounded-xl ml-3">
+                    <div class="w-[114px] rounded-lg p-2 bg-white mt-4 ml-4 mb-3 "><p class="ml-2">ShopEase</p></div>
+                    <h1 class="font-semibold text-2xl mb-4 ml-4">Fix Mobile Button Issue </h1>
+                    <div class="bg-white mx-4 rounded-lg p-2 mb-7">
+                        <p class="overflow-hidden text-ellipsis whitespace-nowrap mb-3 mx-3 mt-1 text-gray-500">Debug using Chrome DevTools <br>, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+
+                    <p class="text-gray-500 ml-4">Deadline</p><br>
+                    <div class="flex -mt-7 ml-4">
+                        
+                        <p class="mr-11">21 March 2025</p>
+                        <button class="bg-[#3752FD] w-[150px] p-3 rounded-lg text-white -mt-4 mb-4">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] mt-14 w-full lg:w-[342px] rounded-xl ml-3">
+                    <div class="w-[114px] rounded-lg p-2 bg-white mt-4 ml-4 mb-3 "><p class="ml-2">ShopEase</p></div>
+                    <h1 class="font-semibold text-2xl mb-4 ml-4">Fix Mobile Button Issue </h1>
+                    <div class="bg-white mx-4 rounded-lg p-2 mb-7">
+                        <p class="overflow-hidden text-ellipsis whitespace-nowrap mb-3 mx-3 mt-1 text-gray-500">Debug using Chrome DevTools <br>, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+
+                    <p class="text-gray-500 ml-4">Deadline</p><br>
+                    <div class="flex -mt-7 ml-4">
+                        
+                        <p class="mr-11">21 March 2025</p>
+                        <button class="bg-[#3752FD] w-[150px] p-3 rounded-lg text-white -mt-4 mb-4">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] mt-14 w-full lg:w-[342px] rounded-xl ml-3 mb-3">
+                    <div class="w-[114px] rounded-lg p-2 bg-white mt-4 ml-4 mb-3 "><p class="ml-2">ShopEase</p></div>
+                    <h1 class="font-semibold text-2xl mb-4 ml-4">Fix Mobile Button Issue </h1>
+                    <div class="bg-white mx-4 rounded-lg p-2 mb-7">
+                        <p class="overflow-hidden text-ellipsis whitespace-nowrap mb-3 mx-3 mt-1 text-gray-500">Debug using Chrome DevTools <br>, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+
+                    <p class="text-gray-500 ml-4">Deadline</p><br>
+                    <div class="flex -mt-7 ml-4">
+                        
+                        <p class="mr-11">21 March 2025</p>
+                        <button class="bg-[#3752FD] w-[150px] p-3 rounded-lg text-white -mt-4 mb-4">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] mt-14 w-full lg:w-[342px] rounded-xl ml-3 mb-3">
+                    <div class="w-[114px] rounded-lg p-2 bg-white mt-4 ml-4 mb-3 "><p class="ml-2">ShopEase</p></div>
+                    <h1 class="font-semibold text-2xl mb-4 ml-4">Fix Mobile Button Issue </h1>
+                    <div class="bg-white mx-4 rounded-lg p-2 mb-7">
+                        <p class="overflow-hidden text-ellipsis whitespace-nowrap mb-3 mx-3 mt-1 text-gray-500">Debug using Chrome DevTools <br>, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+
+                    <p class="text-gray-500 ml-4">Deadline</p><br>
+                    <div class="flex -mt-7 ml-4">
+                        
+                        <p class="mr-11">21 March 2025</p>
+                        <button class="bg-[#3752FD] w-[150px] p-3 rounded-lg text-white -mt-4 mb-4">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] mt-14 w-full lg:w-[342px] rounded-xl ml-3 mb-3">
+                    <div class="w-[114px] rounded-lg p-2 bg-white mt-4 ml-4 mb-3 "><p class="ml-2">ShopEase</p></div>
+                    <h1 class="font-semibold text-2xl mb-4 ml-4">Fix Mobile Button Issue </h1>
+                    <div class="bg-white mx-4 rounded-lg p-2 mb-7">
+                        <p class="overflow-hidden text-ellipsis whitespace-nowrap mb-3 mx-3 mt-1 text-gray-500">Debug using Chrome DevTools <br>, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+
+                    <p class="text-gray-500 ml-4">Deadline</p><br>
+                    <div class="flex -mt-7 ml-4">
+                        
+                        <p class="mr-11">21 March 2025</p>
+                        <button class="bg-[#3752FD] w-[150px] p-3 rounded-lg text-white -mt-4 mb-4">Completed</button>
+                    </div>
+                </div>
+       
+
             </div>
 
-            <div class="w-full lg:max-w-[366px] lg:mx-auto border-4 rounded-2xl">
-                <div class="flex ">
-                    <img src="./assets/activity.png" alt="">
+            
+            <div class="w-full lg:max-w-[366px] lg:mx-auto border-4 rounded-2xl lg:ml-[420px] bg-white mt-4 mb-10">
+                <div class="flex ml-24 my-4">
+                    <img src="./assets/activity.png" class="mr-4" alt="">
                     <p class="text-xl">Activity Log</p>
                 </div>
-                <button class="bg-[#3752FD] w-[150px] p-3 rounded-lg text-white">Clear History</button>
+                <button class="bg-[#3752FD] w-[150px] p-3 rounded-lg text-white ml-24 ">Clear History</button>
                 <div>
 
                 </div>
             </div>
+
+            
         </section>
+        
     </main>
+    <script src="./script/date-display.js"></script>
 </body>
 </html>
