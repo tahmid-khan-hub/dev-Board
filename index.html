@@ -32,27 +32,36 @@
         }
     </style>
 </head>
-<body class="poppins-regular bg-emerald-300 ">
-    <header class="w-full lg:max-w-[1536px] lg:mx-auto bg-white rounded-2xl">
-        <nav class="border-4 lg:my-[20px] lg:py-4 lg:rounded-2xl ">
-            <div class="flex ">
-                <img src="./assets/logo.png" class="w-[51px] m-1 lg:ml-3 mr-2" alt="">
-                <h1 class=" mr-24 lg:mr-[1015px] text-[35px]">Dev<span class="font-bold">Board</span></h1>
+<body class="poppins-regular w-full lg:max-w-[2100px] lg:mx-auto">
+    
+    <header class="pt-1">
+        <nav class="w-full lg:max-w-[1536px] lg:mx-auto bg-white rounded-2xl">
+            <div class="lg:my-[20px] lg:py-4 lg:rounded-2xl ">
+                <div class="flex ">
+                    <img src="./assets/logo.png" class="w-[51px] m-1 lg:ml-3 mr-2" alt="">
+                    <h1 class=" mr-24 lg:mr-[1015px] text-[35px]">Dev<span class="font-bold">Board</span></h1>
+    
+                    <div class="flex mr-6 lg:mr-[38px] lg:bg-[#F4F7FF] rounded-[32px]">
+                        <img src="./assets/checkbox.png" class="w-[32px] h-[32px] m-1 mt-3 mx-4" alt="">
+                        <p id="top-cnt" class=" text-[35px] font-bold mr-4 mt-1">23</p>
+                    </div>
+    
+                    <!-- <img id="rainbow-btn" src="./assets/theme-btn.png" class="w-[50px] h-[50px] m-1 rounded-full border-8" alt=""> -->
 
-                <div class="flex mr-6 lg:mr-[38px] lg:bg-[#F4F7FF] rounded-[32px]">
-                    <img src="./assets/checkbox.png" class="w-[32px] h-[32px] m-1 mt-3 mx-4" alt="">
-                    <p id="top-cnt" class=" text-[35px] font-bold mr-4 mt-1">23</p>
+                    <div id="rainbow-btn" class="w-[60px] h-[60px] rounded-full border-8 flex items-center justify-center">
+                        <img src="./assets/theme-btn.png" class="w-[44px] h-[44px] rounded-full" alt="">
+                    </div>
+                    
                 </div>
-
-                <img src="./assets/theme-btn.png" class="w-[50px] h-[50px] m-1 rounded-full border-8" alt="">
             </div>
         </nav>
     </header>
+
     <main class="w-full lg:max-w-[1536px] lg:mx-auto ">
         
         <section class="grid grid-cols-2 lg:w-[1536px] lg:mx-auto mb-10 ">
 
-            <div class="grid grid-cols-3 border-4 mt-4 p-4 lg:w-[1146px] rounded-xl bg-white mb-10">
+            <div class="grid grid-cols-3 mt-4 p-4 lg:w-[1146px] rounded-xl bg-white mb-10">
 
                 
                 <div class="flex w-full lg:max-w-[263px]  bg-[#F4F7FF] p-6 rounded-xl lg:ml-2">
@@ -183,7 +192,7 @@
             </div>
 
             
-            <div class="w-full lg:max-w-[366px] lg:mx-auto border-4 rounded-2xl lg:ml-[405px] bg-white mt-4 mb-10">
+            <div class="w-full lg:max-w-[366px] lg:mx-auto rounded-2xl lg:ml-[405px] bg-white mt-4 mb-10">
                 <div class="flex ml-24 my-4">
                     <img src="./assets/activity.png" class="mr-4" alt="">
                     <p class="text-xl">Activity Log</p>
@@ -209,6 +218,6 @@
     <script src="./script/improve-job.js"></script>
     <script src="./script/clear-history.js"></script>
     <script src="./script/discovery-btn.js"></script>
-    
+    <script src="./script/rainbow-btn.js"></script>
 </body>
 </html>
