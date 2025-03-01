@@ -1,14 +1,22 @@
-document.getElementById('mobile-btn')
+document.getElementById('emoji-btn')
 .addEventListener('click', function(event){
     event.preventDefault();
+
     alert('Board updated Successfully')
-    document.getElementById('mobile-btn').setAttribute('disabled', true);
-    const btn = document.getElementById('mobile-btn');
-    btn.classList.add('bg-gray-300');
-    let count = document.getElementById('task-cnt');
-    let cnt = parseInt(count.innerText);
+
+    setBtnAttributeAndClassList('emoji-btn')
+
+    let cnt = convertIntoNumber('task-cnt')
     cnt = cnt - 1;
-    count.innerText = cnt;
+    setInnerText('task-cnt', cnt);
+
+    let topCnt = convertIntoNumber('top-cnt');
+    topCnt = topCnt + 1;
+    setInnerText('top-cnt', topCnt);
+
+    if(topCnt === 29 && cnt === 0){
+        alert('Congrates!!! You have completed all the current task')
+    }
 
     const container = document.getElementById('history-container');
 
@@ -35,7 +43,7 @@ document.getElementById('mobile-btn')
     }
 
     div.innerHTML = `
-        <p>You have completed the task Fix Mobile Button Issue at 
+        <p>You have completed the task Add new emoji 🤲 at 
         ${hours}:${minutes}:${seconds} ${ampm}
         </p>
     `
