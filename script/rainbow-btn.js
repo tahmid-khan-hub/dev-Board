@@ -1,14 +1,10 @@
-
-function getRandomColor() {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    return `rgb(${r}, ${g}, ${b})`;
+function getRandomRGB() {
+    let r = Math.floor(Math.random() * 256); // Random between 0-255
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`; // Returns a valid rgb color
 }
 
-document.getElementById("rainbow-btn")
-.addEventListener("click", function (event) {
-    event.preventDefault();
-    const color = document.getElementById("rainbow-btn")
-    color.body.style.backgroundColor = getRandomColor();
+document.getElementById("rainbow-btn").addEventListener("click", function () {
+    document.body.style.backgroundColor = getRandomRGB();
 })
